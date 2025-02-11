@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: pink; */
+    /* background-image: url(freestocks-Y9mWkERHYCU-unsplash.jpg); */
+    background: url(images/freestocks-r_oV6smBBYk-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .section1 {
+    background-color: wheat;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px #000000;
+    /* border: 50px; */
+    font-size: larger;
+    max-width: 90%; /* Limit width */
+    width: 400px; /* Default width */
+  }
+  img {
+    max-width: 20rem;
+    height: auto;
+    border-radius: 20px;
+  }
+  .buttons {
+    margin-top: 20px;
+    /* position: relative; */
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  #yes {
+    background-color: red;
+    color: white;
+    max-width: 90%; /* Prevents it from going out of the box */
+  }
+  #no {
+    background-color: white;
+    color: black;
+    /* position: absolute; */
+    z-index: 999999;
+  }
+  
+  footer {
+    /* padding: 5px 0; */
+  }
+
+  #mute-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    border: none;
+    padding: 10px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#mute-btn:hover {
+    background: lightgray;
+}
+
+/* 💻 Responsive Design (Media Queries) */
+
+/* 📱 Small devices (phones) */
+@media (max-width: 480px) {
+  .section1 {
+    width: 80%;
+    padding: 25px;
+  }
+
+  #yes {
+    font-size: 16px;
+    max-width: 100%; 
+    word-wrap: break-word; 
+    
+}
+}
+
+/* 📱📏 Medium devices (tablets) */
+@media (max-width: 768px) {
+  .section1 {
+    width: 85%;
+    padding: 30px;
+  }
+
+  #yes {
+    font-size: 16px;
+    max-width: 100%; 
+    word-wrap: break-word; 
+    
+}
+}
+
+/* 🖥️ Large devices (desktops) */
+@media (min-width: 1024px) {
+  .section1 {
+    width: 90%;
+    padding: 30px;
+  }
+}
