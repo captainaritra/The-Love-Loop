@@ -110,10 +110,3 @@ body {
 }
 }
 
-/* 🖥️ Large devices (desktops) */
-@media (min-width: 1024px) {
-  .section1 {
-    width: 90%;
-    padding: 30px;
-  }
-}
