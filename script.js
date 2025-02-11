@@ -1,10 +1,10 @@
 const gifs = [
-    "images/1.gif",
-    "images/2.gif",
-    "images/3.gif",
-    "images/4.gif",
-    "images/5.gif",
-    "images/6.gif"
+    "images/1.webp",
+    "images/2.webp",
+    "images/3.webp",
+    "images/4.webp",
+    "images/5.webp",
+    "images/6.webp"
 ];
 
 const questions = [
@@ -78,7 +78,7 @@ noButton.addEventListener("mousemove", function () {
 // When "Yes" is clicked
 yesButton.addEventListener("click", function () {
     questionText.innerText = "Yay! I knew it! 😍";
-    gifImage.src = "images/last.gif";
+    gifImage.src = "images/last.webp";
     yesButton.style.display = "none";
     noButton.style.display = "none";
 });
@@ -104,7 +104,7 @@ function moveNoButton(event) {
 
 
 
-let music = new Audio("audio/Ahista.mp3");
+let music = new Audio("audio/Ahista.webm");
 music.loop = true; // Keep looping
 
 let muteBtn = document.getElementById("mute-btn");
