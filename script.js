@@ -83,14 +83,16 @@ yesButton.addEventListener("click", function () {
     noButton.style.display = "none";
 });
 
+// Add event listeners for both desktop and mobile
 noButton.addEventListener("mouseover", moveNoButton);
 noButton.addEventListener("mousemove", moveNoButton);
-noButton.addEventListener("touchmove", moveNoButton); // Added for mobile
+noButton.addEventListener("touchstart", moveNoButton); // Added for mobile
+noButton.addEventListener("touchmove", moveNoButton);  // Added for mobile
 
 function moveNoButton(event) {
     if (noButtonEscape) {
-        let x = Math.random() * window.innerWidth * 0.8;
-        let y = Math.random() * window.innerHeight * 0.8;
+        let x = Math.random() * (window.innerWidth - noButton.clientWidth);
+        let y = Math.random() * (window.innerHeight - noButton.clientHeight);
 
         noButton.style.position = "absolute";
         noButton.style.left = `${x}px`;
@@ -99,6 +101,7 @@ function moveNoButton(event) {
         event.preventDefault(); // Prevents accidental scrolling
     }
 }
+
 
 
 let music = new Audio("audio/Ahista.mp3");
