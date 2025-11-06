@@ -34,7 +34,7 @@ A romantic song plays in the background with an on/off toggle for control. 🎶
 
 ⚡ JavaScript → Logic & interactivity
 
-💖 Perfect for Valentine's Day fun! Fork, modify, and spread the love! 💘
+💖 Perfect for Valentine's Day fun! Fork, modify, and spread the love! 💘 HAHA
 
 
 
